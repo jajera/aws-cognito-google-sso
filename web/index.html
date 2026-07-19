@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cognito Google SSO Demo</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <section id="signed-out-view" class="card auth-card">
+        <p class="eyebrow">AWS authentication demo</p>
+        <h1>Cognito Google SSO</h1>
+        <p class="lede">
+          Sign in with Google through Amazon Cognito using the authorization
+          code flow and PKCE.
+        </p>
+
+        <div id="status" class="status" role="status" aria-live="polite"></div>
+
+        <button id="sign-in" type="button">Sign in with Google</button>
+      </section>
+
+      <section id="signed-in-view" class="app-shell" hidden>
+        <header class="app-header">
+          <div>
+            <p class="eyebrow">Protected demo application</p>
+            <p class="app-name">Cognito SSO Workspace</p>
+          </div>
+          <div class="account-actions">
+            <span id="account-email" class="account-email"></span>
+            <button id="sign-out" type="button" class="secondary">
+              Sign out
+            </button>
+          </div>
+        </header>
+
+        <div class="app-content">
+          <section class="welcome">
+            <p class="success-badge">Authentication successful</p>
+            <h1 id="welcome-heading">Welcome</h1>
+            <p>
+              You are now inside the protected area of the demo application.
+            </p>
+          </section>
+
+          <section class="empty-state">
+            <div class="empty-icon" aria-hidden="true">✓</div>
+            <h2>Your application starts here</h2>
+            <p>
+              This empty workspace represents content that would only be
+              available to authenticated users.
+            </p>
+          </section>
+
+          <details class="identity-details">
+            <summary>View authentication details</summary>
+            <dl id="claims-list"></dl>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <script src="./config.js"></script>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

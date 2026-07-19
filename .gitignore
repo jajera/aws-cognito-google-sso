@@ -1,0 +1,17 @@
+# Secrets and local Terraform state (also covered under infra/)
+**/terraform.tfvars
+**/*.tfstate
+**/*.tfstate.*
+**/.terraform/
+**/crash.log
+**/crash.*.log
+**/*.zip
+
+# Video build intermediates
+docs/videos/slides/
+docs/videos/music.*
+
+# Scratch / editor dumps
+Untitled*
+*.tmp
+.DS_Store

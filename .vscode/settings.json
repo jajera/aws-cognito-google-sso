@@ -1,0 +1,66 @@
+{
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.formatOnSave": true,
+  "editor.rulers": [100],
+
+  "files.exclude": {
+    "**/.terraform": true,
+    "**/*.tfstate": true,
+    "**/*.tfstate.*": true,
+    "**/.terraform.lock.hcl": false
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/.terraform/**": true
+  },
+  "search.exclude": {
+    "**/.terraform": true,
+    "**/*.tfstate": true,
+    "**/*.tfstate.*": true
+  },
+
+  "[terraform]": {
+    "editor.defaultFormatter": "hashicorp.terraform",
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true
+  },
+  "[terraform-vars]": {
+    "editor.defaultFormatter": "hashicorp.terraform",
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true
+  },
+  "terraform.languageServer.enable": true,
+  "terraform.experimentalFeatures.validateOnSave": true,
+
+  "files.associations": {
+    "*.tftest.hcl": "terraform"
+  },
+
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.tabSize": 2
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.tabSize": 2
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
+    "editor.formatOnSave": true,
+    "editor.wordWrap": "on",
+    "files.trimTrailingWhitespace": false
+  },
+  "markdownlint.config": {
+    "MD013": false,
+    "MD024": {
+      "siblings_only": true
+    }
+  },
+
+  "aws.region": "ap-southeast-2"
+}

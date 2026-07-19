@@ -1,0 +1,10 @@
+region               = "ap-southeast-2"
+google_client_id     = "replace-with-google-oauth-client-id.apps.googleusercontent.com"
+google_client_secret = "replace-with-google-oauth-client-secret"
+
+# Optional Phase 2:
+# enable_email_allowlist_lambda = true
+# allowed_emails = [
+#   "operator@gmail.com",
+#   "admin@gmail.com",
+# ]

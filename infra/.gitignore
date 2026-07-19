@@ -1,0 +1,12 @@
+# Local variables and state can contain the Google client secret.
+terraform.tfvars
+*.tfstate
+*.tfstate.*
+
+# Terraform working directory and crash logs.
+.terraform/
+crash.log
+crash.*.log
+
+# Generated Lambda deployment archives.
+*.zip
